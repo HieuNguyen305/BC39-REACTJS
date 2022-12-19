@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class Header extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container px-lg-5">
           <a className="navbar-brand" href="#!">
             Start Bootstrap
@@ -19,7 +19,10 @@ export default class Header extends Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            className="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#!">

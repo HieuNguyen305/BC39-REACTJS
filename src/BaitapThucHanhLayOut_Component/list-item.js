@@ -3,7 +3,7 @@ import Item from "./item";
 export default class ListItem extends Component {
   render() {
     return (
-      <div>
+      <div className="row">
         <Item />
         <Item />
         <Item />
