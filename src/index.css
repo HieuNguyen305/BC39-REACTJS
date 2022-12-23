@@ -12,3 +12,37 @@ code {
     monospace;
 }
 
+.selectedGlass {
+  position: absolute;
+  top: 145px;
+  left: 115px;
+}
+
+.model-container {
+  position: relative;
+}
+
+.selectedGlass img {
+  opacity: 0.9;
+}
+
+.glassInfo {
+  position: relative;
+  background-color: orange;
+  opacity: 0.6;
+  top: 220px;
+  right: 100px;
+}
+
+.glassInfo h3 {
+  color: blue;
+}
+
+.glassInfo span {
+  color: red;
+  font-size: 20px;
+}
+
+.glassInfo p {
+  color: white;
+}
