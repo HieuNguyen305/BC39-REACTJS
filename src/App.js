@@ -2,13 +2,14 @@
 import "./App.css";
 import LayOutComponent from "./BaitapThucHanhLayOut_Component";
 import Glasses from "./BaiTapThucHanhSetStateGlasses";
+import ShoesStore from "./Shoes_Shop/shoesStore";
 
 function App() {
   return (
     <div>
-      {/* Gọi lại component */}
       {/* <LayOutComponent /> */}
-      <Glasses />
+      {/* <Glasses /> */}
+      <ShoesStore />
     </div>
   );
 }
