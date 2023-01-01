@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ProductList from "./productList";
 import Cart from "./Cart";
 import data from "./data.json";
+import Modal from "./modal";
 
 export default class ShoesStore extends Component {
   constructor(props) {
@@ -11,6 +12,11 @@ export default class ShoesStore extends Component {
       detail: data[0],
     };
   }
+  handleDetail = (shoes) => {
+    this.setState({
+      detail: shoes,
+    })
+  }
 
   render() {
     const { listShoes, detail } = this.state;
@@ -18,7 +24,8 @@ export default class ShoesStore extends Component {
       <div>
         <div className="container">
           <Cart listShoes={listShoes} />
-          <ProductList listShoes={listShoes} detailShoes={detail} />
+          <ProductList listShoes={listShoes} handleDetail={this.handleDetail} />
+          <Modal detail={detail}   />
         </div>
       </div>
     );

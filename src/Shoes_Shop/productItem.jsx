@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 
 export default class ProductItem extends Component {
+
   handleDetail = () => {
+    console.log(this.props.shoes);
     this.props.getDetail(this.props.shoes);
+    
   }
   render() {
     const { shoes } = this.props;
@@ -13,7 +16,7 @@ export default class ProductItem extends Component {
           <div className="card-body">
             <h4 className="card-title">{shoes.name}</h4>
             <p className="card-text">{shoes.price}$</p>
-            <button className="btn btn-primary mx-1" onClick={this.handleDetail}>Get Detail</button>
+            <button className="btn btn-primary mx-1" data-toggle="modal" data-target="#modalId" onClick={this.handleDetail}>Get Detail</button>
             <button className="btn btn-success" data-toggle="modal" data-target="#modelId">Add to Cart</button>
           </div>
         </div>
